@@ -64,13 +64,13 @@ public class Controller implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 
 		TranslateTransition translateTransition = new TranslateTransition(
-				Duration.seconds(0.5), logoLabel);
-		translateTransition.setByY(700);
+				Duration.seconds(0.1), logoLabel);
+		translateTransition.setByX(700);
 		translateTransition.play();
 
 		TranslateTransition translateTransition0 = new TranslateTransition(
-				Duration.seconds(0.5), nameLabel);
-		translateTransition0.setByY(700);
+				Duration.seconds(0.1), nameLabel);
+		translateTransition0.setByX(-700);
 		translateTransition0.play();
 
 		TranslateTransition translateTransition00 = new TranslateTransition(
@@ -82,7 +82,8 @@ public class Controller implements Initializable {
 				.setOnFinished(event -> {
 					TranslateTransition translateTransition1 = new TranslateTransition(
 							Duration.seconds(1), logoLabel);
-					translateTransition1.setByY(-700);
+					//translateTransition1.setByY(-700);
+					translateTransition1.setByX(-700);
 					translateTransition1.play();
 
 					translateTransition1.setOnFinished(event1 -> {
@@ -91,7 +92,7 @@ public class Controller implements Initializable {
 
 						TranslateTransition translateTransition11 = new TranslateTransition(
 								Duration.seconds(1), nameLabel);
-						translateTransition11.setByY(-700);
+						translateTransition11.setByX(700);
 						translateTransition11.play();
 
 						translateTransition11.setOnFinished(event2 -> {
