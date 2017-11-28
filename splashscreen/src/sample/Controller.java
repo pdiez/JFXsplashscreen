@@ -16,6 +16,14 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
+/**
+ * 
+ * @author 2912
+ * @version 1.0.0
+ * @see Main
+ * 
+ */
+
 public class Controller implements Initializable {
 
 	@FXML
